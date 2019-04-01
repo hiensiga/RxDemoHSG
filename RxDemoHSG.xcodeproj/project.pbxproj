@@ -11,6 +11,7 @@
 		3F64E16F2249C00000C428DA /* YTResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64E16E2249C00000C428DA /* YTResults.swift */; };
 		3F64E174224A2CCB00C428DA /* GGCompleteSuggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64E173224A2CCB00C428DA /* GGCompleteSuggestion.swift */; };
 		3F64E176224A340E00C428DA /* GGSuggestionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F64E175224A340E00C428DA /* GGSuggestionAPI.swift */; };
+		3F78AD832251C964003B23D1 /* YTVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78AD822251C964003B23D1 /* YTVideoPlayerViewController.swift */; };
 		3FFB4ADA224DF1EB00642A7E /* Search-Messi-.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFB4AD9224DF1EB00642A7E /* Search-Messi-.json */; };
 		3FFB4ADE224DFECC00642A7E /* Search-Messi-CAoQAA.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFB4ADB224DF25F00642A7E /* Search-Messi-CAoQAA.json */; };
 		3FFB4ADF224DFECC00642A7E /* Search-Messi-CBQQAA.json in Resources */ = {isa = PBXBuildFile; fileRef = 3FFB4ADC224DF29800642A7E /* Search-Messi-CBQQAA.json */; };
@@ -57,6 +58,7 @@
 		3F64E16E2249C00000C428DA /* YTResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTResults.swift; sourceTree = "<group>"; };
 		3F64E173224A2CCB00C428DA /* GGCompleteSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGCompleteSuggestion.swift; sourceTree = "<group>"; };
 		3F64E175224A340E00C428DA /* GGSuggestionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGSuggestionAPI.swift; sourceTree = "<group>"; };
+		3F78AD822251C964003B23D1 /* YTVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTVideoPlayerViewController.swift; sourceTree = "<group>"; };
 		3FFB4AD9224DF1EB00642A7E /* Search-Messi-.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Search-Messi-.json"; sourceTree = "<group>"; };
 		3FFB4ADB224DF25F00642A7E /* Search-Messi-CAoQAA.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Search-Messi-CAoQAA.json"; sourceTree = "<group>"; };
 		3FFB4ADC224DF29800642A7E /* Search-Messi-CBQQAA.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Search-Messi-CBQQAA.json"; sourceTree = "<group>"; };
@@ -142,6 +144,14 @@
 				3F64E173224A2CCB00C428DA /* GGCompleteSuggestion.swift */,
 			);
 			path = XML;
+			sourceTree = "<group>";
+		};
+		3F78AD812251C921003B23D1 /* Youtube Player */ = {
+			isa = PBXGroup;
+			children = (
+				3F78AD822251C964003B23D1 /* YTVideoPlayerViewController.swift */,
+			);
+			path = "Youtube Player";
 			sourceTree = "<group>";
 		};
 		3FFB4AD7224DF18C00642A7E /* StubData */ = {
@@ -250,6 +260,7 @@
 		3FFEBD5E2248B6A5003D04B5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3F78AD812251C921003B23D1 /* Youtube Player */,
 				3F0D87BB224C8AFE00A7719F /* Search Video Playlist */,
 				3FFC9383224B2C0B0095583E /* SearchVideo */,
 				3FFEBD312248AD55003D04B5 /* ViewController.swift */,
@@ -493,7 +504,6 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
@@ -506,6 +516,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit/XCDYouTubeKit.framework",
 				"${BUILT_PRODUCTS_DIR}/XMLDictionary/XMLDictionary.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -515,7 +526,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
@@ -528,6 +538,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCDYouTubeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMLDictionary.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,6 +587,7 @@
 				3FFEBD6A2248CFFB003D04B5 /* YTSearchProvider.swift in Sources */,
 				3FFEBD322248AD55003D04B5 /* ViewController.swift in Sources */,
 				3F64E174224A2CCB00C428DA /* GGCompleteSuggestion.swift in Sources */,
+				3F78AD832251C964003B23D1 /* YTVideoPlayerViewController.swift in Sources */,
 				3FFEBD302248AD55003D04B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

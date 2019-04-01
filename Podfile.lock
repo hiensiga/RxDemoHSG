@@ -3,7 +3,6 @@ PODS:
   - AlamofireImage (3.5.0):
     - Alamofire (~> 4.8)
   - Differentiator (3.1.0)
-  - ESPullToRefresh (2.7)
   - EVReflection/Alamofire (5.10.0):
     - Alamofire
     - EVReflection/Core
@@ -75,11 +74,11 @@ PODS:
   - SwifterSwift/SwiftStdlib (4.6.0)
   - SwifterSwift/UIKit (4.6.0)
   - SwiftyJSON (4.2.0)
+  - XCDYouTubeKit (2.7.3)
   - XMLDictionary (1.4.1)
 
 DEPENDENCIES:
   - AlamofireImage
-  - ESPullToRefresh
   - EVReflection/MoyaRxSwiftXML
   - Moya
   - Moya-ObjectMapper
@@ -92,13 +91,13 @@ DEPENDENCIES:
   - RxSwift
   - SwifterSwift
   - SwiftyJSON
+  - XCDYouTubeKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
     - Differentiator
-    - ESPullToRefresh
     - EVReflection
     - Moya
     - Moya-ObjectMapper
@@ -111,13 +110,13 @@ SPEC REPOS:
     - RxSwift
     - SwifterSwift
     - SwiftyJSON
+    - XCDYouTubeKit
     - XMLDictionary
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
-  ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
   EVReflection: 1abc1a81927ab0d30170238cf9b79bff489e9728
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   Moya-ObjectMapper: c514b5eafcfd5e260f85f7a5bf66895a217e2b37
@@ -130,8 +129,9 @@ SPEC CHECKSUMS:
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
   SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  XCDYouTubeKit: 3f4fd3eb3ed494a46a8f007b91315eed6dd6df1f
   XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
 
-PODFILE CHECKSUM: 54f6c92d53e5a4b3ed072dab310c86b4f4363a28
+PODFILE CHECKSUM: 461d6da80750421783dced2fe23c741c041f92cd
 
 COCOAPODS: 1.5.3
