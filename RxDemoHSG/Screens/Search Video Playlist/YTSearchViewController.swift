@@ -44,6 +44,16 @@ extension YTSearchViewController {
         
         let tableView = self.tableView!
         
+        tableView.rx.modelSelected(YTSearchResult.self)
+            .subscribe(onNext: { item in
+                //                self.pushToVideoSearch(text: item)
+                //                self.searchController?.searchBar.endEditing(true)
+                if let video = item as? YTVideo {
+                    self.playVideo(id: video.videoId!)
+                }
+            })
+            .disposed(by: disposeBag)
+        
         let configureCell = { (tableView: UITableView, row: Int, ytSearchResult: YTSearchResult) -> UITableViewCell in
             if let cell = tableView.dequeueReusableCell(withIdentifier: "YTSearchResultCell") as? YTVideoTableViewCell
             {
@@ -128,6 +138,12 @@ extension YTSearchViewController {
             .drive()
             .disposed(by: disposeBag)
  
+    }
+    
+    func playVideo(id: String) {
+        let viewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "YTVideoPlayerViewController") as! YTVideoPlayerViewController
+        viewController.videoId = id
+        self.present(viewController, animated: true, completion: nil)
     }
 }
 

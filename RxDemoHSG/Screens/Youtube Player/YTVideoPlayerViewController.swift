@@ -7,24 +7,28 @@
 //
 
 import UIKit
+import XCDYouTubeKit
 
 class YTVideoPlayerViewController: UIViewController {
 
+    var videoId: String!
+    @IBOutlet weak var playerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        loadVideo(id: videoId)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loadVideo(id: String) {
+        let playerViewController = XCDYouTubeVideoPlayerViewController(videoIdentifier: videoId)
+        // playerViewController.moviePlayer.backgroundPlaybackEnabled = true
+        playerViewController.present(in: playerView)
+        playerViewController.moviePlayer.prepareToPlay()
+        playerViewController.moviePlayer.shouldAutoplay = true
     }
-    */
 
+    @IBAction func tapClose(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

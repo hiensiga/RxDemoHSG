@@ -353,7 +353,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpD-Q1-7O9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="26.53673163418291"/>
+            <point key="canvasLocation" x="870" y="27"/>
+        </scene>
+        <!--Video Player View Controller-->
+        <scene sceneID="pxs-Lz-EXL">
+            <objects>
+                <viewController storyboardIdentifier="YTVideoPlayerViewController" id="GOY-zG-Tr7" customClass="YTVideoPlayerViewController" customModule="RxDemoHSG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bKi-FG-Rsm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDP-kB-Qom" userLabel="Player View">
+                                <rect key="frame" x="0.0" y="20" width="375" height="211"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mDP-kB-Qom" secondAttribute="height" multiplier="16:9" id="wgb-Ih-HRn"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wap-Eu-n6O">
+                                <rect key="frame" x="0.0" y="232" width="375" height="435"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHi-uQ-xVd">
+                                        <rect key="frame" x="16" y="16" width="44" height="44"/>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="NHi-uQ-xVd" secondAttribute="height" multiplier="1:1" id="l8o-yo-drH"/>
+                                            <constraint firstAttribute="width" constant="44" id="uCY-vP-OCh"/>
+                                        </constraints>
+                                        <state key="normal" title="Close"/>
+                                        <connections>
+                                            <action selector="tapClose:" destination="GOY-zG-Tr7" eventType="touchUpInside" id="1rr-D2-n1f"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NHi-uQ-xVd" firstAttribute="top" secondItem="wap-Eu-n6O" secondAttribute="top" constant="16" id="9x9-JR-8k4"/>
+                                    <constraint firstItem="NHi-uQ-xVd" firstAttribute="leading" secondItem="wap-Eu-n6O" secondAttribute="leading" constant="16" id="MzU-aS-1Cq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89257695996825392" green="0.74276387695124446" blue="0.10185874154370182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e2H-rm-0GB" firstAttribute="top" secondItem="mDP-kB-Qom" secondAttribute="top" id="9ji-xw-KDb"/>
+                            <constraint firstItem="e2H-rm-0GB" firstAttribute="trailing" secondItem="wap-Eu-n6O" secondAttribute="trailing" id="PPf-cD-Njl"/>
+                            <constraint firstItem="wap-Eu-n6O" firstAttribute="top" secondItem="mDP-kB-Qom" secondAttribute="bottom" constant="1" id="WG4-XX-haA"/>
+                            <constraint firstItem="e2H-rm-0GB" firstAttribute="bottom" secondItem="wap-Eu-n6O" secondAttribute="bottom" id="sGE-3K-tbw"/>
+                            <constraint firstItem="mDP-kB-Qom" firstAttribute="leading" secondItem="e2H-rm-0GB" secondAttribute="leading" id="ufW-sG-Vqr"/>
+                            <constraint firstItem="wap-Eu-n6O" firstAttribute="leading" secondItem="e2H-rm-0GB" secondAttribute="leading" id="wTP-ti-tU6"/>
+                            <constraint firstItem="e2H-rm-0GB" firstAttribute="trailing" secondItem="mDP-kB-Qom" secondAttribute="trailing" id="zdV-vp-H4x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e2H-rm-0GB"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="mDP-kB-Qom" id="I7s-nN-uoG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M83-85-9a1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5999999999999" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>
