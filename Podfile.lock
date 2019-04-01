@@ -1,0 +1,137 @@
+PODS:
+  - Alamofire (4.8.1)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - Differentiator (3.1.0)
+  - ESPullToRefresh (2.7)
+  - EVReflection/Alamofire (5.10.0):
+    - Alamofire
+    - EVReflection/Core
+  - EVReflection/AlamofireXML (5.10.0):
+    - EVReflection/Alamofire
+    - EVReflection/XML
+  - EVReflection/Core (5.10.0)
+  - EVReflection/Moya (5.10.0):
+    - EVReflection/Alamofire
+    - Moya
+  - EVReflection/MoyaRxSwift (5.10.0):
+    - EVReflection/Moya
+    - Moya/RxSwift
+  - EVReflection/MoyaRxSwiftXML (5.10.0):
+    - EVReflection/MoyaRxSwift
+    - EVReflection/MoyaXML
+  - EVReflection/MoyaXML (5.10.0):
+    - EVReflection/AlamofireXML
+    - EVReflection/Moya
+  - EVReflection/XML (5.10.0):
+    - EVReflection/Core
+    - XMLDictionary
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya-ObjectMapper (2.8):
+    - Moya-ObjectMapper/Core (= 2.8)
+  - Moya-ObjectMapper/Core (2.8):
+    - Moya (~> 12.0)
+    - ObjectMapper (~> 3.4)
+  - Moya-ObjectMapper/RxSwift (2.8):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift
+    - RxSwift (~> 4)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Moya/RxSwift (12.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - ObjectMapper (3.4.2)
+  - Result (4.1.0)
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxFeedback (2.0.0):
+    - RxCocoa (~> 4.4)
+    - RxSwift (~> 4.4)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - SwifterSwift (4.6.0):
+    - SwifterSwift/AppKit (= 4.6.0)
+    - SwifterSwift/CoreGraphics (= 4.6.0)
+    - SwifterSwift/CoreLocation (= 4.6.0)
+    - SwifterSwift/Foundation (= 4.6.0)
+    - SwifterSwift/MapKit (= 4.6.0)
+    - SwifterSwift/SpriteKit (= 4.6.0)
+    - SwifterSwift/SwiftStdlib (= 4.6.0)
+    - SwifterSwift/UIKit (= 4.6.0)
+  - SwifterSwift/AppKit (4.6.0)
+  - SwifterSwift/CoreGraphics (4.6.0)
+  - SwifterSwift/CoreLocation (4.6.0)
+  - SwifterSwift/Foundation (4.6.0)
+  - SwifterSwift/MapKit (4.6.0)
+  - SwifterSwift/SpriteKit (4.6.0)
+  - SwifterSwift/SwiftStdlib (4.6.0)
+  - SwifterSwift/UIKit (4.6.0)
+  - SwiftyJSON (4.2.0)
+  - XMLDictionary (1.4.1)
+
+DEPENDENCIES:
+  - AlamofireImage
+  - ESPullToRefresh
+  - EVReflection/MoyaRxSwiftXML
+  - Moya
+  - Moya-ObjectMapper
+  - Moya-ObjectMapper/RxSwift
+  - Moya/RxSwift
+  - ObjectMapper
+  - RxCocoa
+  - RxDataSources
+  - RxFeedback
+  - RxSwift
+  - SwifterSwift
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - Differentiator
+    - ESPullToRefresh
+    - EVReflection
+    - Moya
+    - Moya-ObjectMapper
+    - ObjectMapper
+    - Result
+    - RxAtomic
+    - RxCocoa
+    - RxDataSources
+    - RxFeedback
+    - RxSwift
+    - SwifterSwift
+    - SwiftyJSON
+    - XMLDictionary
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
+  EVReflection: 1abc1a81927ab0d30170238cf9b79bff489e9728
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Moya-ObjectMapper: c514b5eafcfd5e260f85f7a5bf66895a217e2b37
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxFeedback: 49bb931caf6d05e315d5b5366c0991ad1474ea36
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
+
+PODFILE CHECKSUM: 54f6c92d53e5a4b3ed072dab310c86b4f4363a28
+
+COCOAPODS: 1.5.3
